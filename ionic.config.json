@@ -1,0 +1,7 @@
+{
+  "name": "M10B2BApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
