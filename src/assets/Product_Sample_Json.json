@@ -1,0 +1,26 @@
+{
+   "result": [
+      {
+         "productSummary": {
+            "Pro_Code": "Procode1",
+            "Pro_Desc": "Jobmate Hevay Duty Storage Bin 30L",
+            "Pro_Price": "35"
+         }
+      },
+      {
+         "productSummary": {
+            "Pro_Code": "Procode2",
+            "Pro_Desc": "Bosh Advanced Aquatak 140 Water Blaster 2100W",
+            "Pro_Price": "429"
+         }
+      },
+      {
+         "productSummary": {
+            "Pro_Code": "Procode3",
+            "Pro_Desc": "Growfresh Pot Assorted Vegetable Plants 10cm",
+            "Pro_Price": "9"
+         }
+      }
+   ]
+}
+
