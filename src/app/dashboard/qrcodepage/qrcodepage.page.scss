@@ -1,0 +1,39 @@
+ion-card{
+	text-align: center;
+	align-content: center;
+	align-self: center;
+	/*img{
+	  text-align: center;
+	  align-content: center;
+	  align-self: center;
+	}*/
+}
+
+.logo_format_qrcode {
+    background-color: #000000;
+    /*img {
+        align-items: center;
+        display: block;
+        margin: 0 auto;
+		height: 50px;
+    }*/
+}
+
+ion-content {
+	--padding-top: 100px;
+  }
+
+.image-center{
+	/*margin:15px auto;
+	height: 200px;
+	width: max-content;
+	padding-left: 25%;*/
+	margin: 0px auto;
+    height: 160px;
+    width: fit-content;
+    padding-left: 25%;
+}
+
+.ion-img_center {
+	padding-left: 25%;
+}

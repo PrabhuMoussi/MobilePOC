@@ -1,0 +1,27 @@
+<ion-header class="logo_format">
+  <img src="assets/images/mitre10logo.png" id="imgLOGO"/>
+</ion-header>
+
+<ion-content class="card_center" [fullscreen]="true">
+  <ion-card>
+    <ion-card-content>
+      <form [formGroup]="loginFormGroup" (ngSubmit)="login()">
+        <ion-item>
+          <ion-input formControlName="userName" labelPlacement="floating" value="">
+            <div class="ion-text-uppercase" slot="label">user name</div>
+          </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input formControlName="password" type="password" labelPlacement="floating" value="">
+            <div class="ion-text-uppercase" slot="label">password</div>
+          </ion-input>          
+        </ion-item>
+
+        <!-- <ion-button routerLink="/upload" class="ion-text-uppercase" [disabled]="loginFormGroup.invalid" margin-top expand="full">login</ion-button> -->
+        <ion-button type="Submit" class="ion-text-uppercase" [disabled]="loginFormGroup.invalid" margin-top expand="full">login</ion-button>
+        <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+      </form>      
+    </ion-card-content>
+  </ion-card>
+</ion-content>

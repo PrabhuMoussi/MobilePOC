@@ -1,0 +1,32 @@
+
+
+<ion-content class="card_center_upload"  [fullscreen]="true">
+   <ion-card *ngFor="let products of productDetails">
+    <ion-card-content>
+      <table>
+        <tr>
+          <td>
+            <ion-thumbnail slot="start">        
+              <!-- <img alt="Image_Sample" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" /> -->
+              <img class="imgDisplay" [src]="displayImage(products.image)"/>
+            </ion-thumbnail>
+          </td>
+          <td>
+           <!-- search text: {{searchFromTxt}} -->
+           <ion-label id="product_description">{{products.name}}</ion-label><br>
+            <ion-label id="product_price">$ {{products.price}}</ion-label><br>
+            <ion-button class="buttonDisp" id="addtocart" color="primary">Add to cart</ion-button>
+          </td>
+        </tr>
+      </table>
+    </ion-card-content>
+  </ion-card>
+  </ion-content>
+  <!-- <ion-button [color]="pageId > 1 ? 'danger':'primary'" (click)="GoToNextPage()" disabled [attr.disabled]="pageId > 1">Go to next page</ion-button>
+  <ion-button [color]="pageId < 2 ? 'danger':'primary'" (click)="GoToPreviousPage()" disabled [attr.disabled]="pageId < 2">Go to previous page</ion-button>
+  <ion-text>Showing {{ pageId == 1 ? pageId : (pageId-1)*25 + 1 }} to {{ pageId*25 }} of 50 records</ion-text> -->
+  <!-- <ion-button [color]="pageId > 1 ? 'danger':'primary'" (click)="GoToNextPage()" disabled [attr.disabled]="pageId > 1">Next Page</ion-button>
+  <ion-button [color]="pageId < 2 ? 'danger':'primary'" (click)="GoToPreviousPage()" disabled [attr.disabled]="pageId < 2">Previous Page</ion-button>
+  <ion-text class="primary">Showing {{ pageId == 1 ? pageId : (pageId-1)*25 + 1 }} to {{ pageId*25 }} of 50 records</ion-text> -->
+
+ 

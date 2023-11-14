@@ -1,0 +1,30 @@
+
+<ion-content>
+  <!-- <ion-card *ngFor="let qrcode of qrDetails"> -->
+  <form>
+    <ion-card>      
+        <ion-card-content>
+        <table>
+          <tr>
+            <td>
+              <ion-avatar class="image-center">
+                <ion-img [src]="'data:image/jpeg;base64,' + qrProfileImg" alt="image of Mitre10 profile" id="qrProfileImg"></ion-img>   
+              </ion-avatar>
+            </td>
+          </tr>
+        </table>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-content>
+        <table>
+          <tr>
+            <td>
+              <ion-img class="ion-img_center" [src]="'data:image/jpeg;base64,' + qrCodeImg" alt="image of Mitre10 qrcode" id="qrCodeImg"></ion-img>   
+            </td>
+          </tr>
+        </table>
+      </ion-card-content>
+    </ion-card>
+  </form>  
+</ion-content>

@@ -1,0 +1,32 @@
+<ion-header class="logo_format_pass">
+  <img src="assets/images/mitre10logo.png" id="imgLOGO"/>
+</ion-header>
+
+<ion-content [fullscreen]="true"  class="card_center_pass">
+  <ion-card>
+    <ion-card-content>
+      <form [formGroup]="passFormGroup" (ngSubmit)="passFun()">
+        <ion-item>
+          <ion-input formControlName="oldPassword" type="password" labelPlacement="floating" value="">
+            <div class="ion-text-uppercase" slot="label">old password</div>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input formControlName="newPasswordA" type="password" labelPlacement="floating" value="">
+            <div class="ion-text-uppercase" slot="label">new password</div>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input formControlName="newPasswordB" type="password" labelPlacement="floating" value="">
+            <div class="ion-text-uppercase" slot="label">confirm password</div>
+          </ion-input>
+        </ion-item>
+
+        <!-- <ion-button class="ion-text-uppercase" routerLink="/dashboard" margin-top expand="full">confirm</ion-button> -->
+        <ion-button type="submit" class="ion-text-uppercase" margin-top expand="full">confirm</ion-button>
+        <ion-button class="ion-text-uppercase" margin-top expand="full" (click)="goToBack()">back</ion-button>
+      </form>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,55 @@
+ion-scroll[scrollX] {
+    white-space: nowrap;
+    height: 120px;
+    overflow: hidden;
+
+    .scroll-item {
+      display: inline-block;
+    }
+
+    .selectable-icon{
+      margin: 10px 20px 10px 20px;
+      color: red;
+      font-size: 100px;
+    }
+
+    ion-avatar img{
+      margin: 10px;
+    }
+  }
+
+  ion-scroll[scroll-avatar]{
+    height: 60px;
+  }
+
+  /* Hide ion-content scrollbar */
+  ::-webkit-scrollbar{
+    display:none;
+  }
+
+.logo_format_dashboard {
+    background-color: #000000;
+    img {
+        align-items: center;
+        display: block;
+        margin: 0 auto;
+        height: 50px;
+    }
+}
+
+ion-tab-bar {
+  // Translucent positioning effect
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  //background-color: black;
+}
+
+/*ion-tab-button {
+  color: white;
+}*/
+
+ion-content {
+  --padding-top: 100px;
+}

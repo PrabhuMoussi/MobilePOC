@@ -1,0 +1,13 @@
+
+<ion-content>
+  <ion-card *ngFor="let dashDetails of bottomDetails">
+    <ion-card-content>
+      <form>
+        <ion-item>
+          <!-- <img src="{{dashDetails.banner}}"/> -->
+          <img [src]="displayImage(dashDetails.banner)"/>
+        </ion-item>
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

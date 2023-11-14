@@ -1,0 +1,28 @@
+.logo_format {
+    background-color: #000000;
+    img {
+        align-items: center;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.card_center {
+    transform: translateX(-50%) translateY(-50%);
+       top: 55%;
+       left: 50%;
+       position: relative;
+}
+
+ion-content {
+    --ion-background-color: #000000;
+    --keyboard-offset: 0px !important;
+}
+
+ion-card {
+    --ion-background-color: #ffffff;
+}
+
+ion-button {
+    --background: #FF6D00;
+}

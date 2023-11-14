@@ -1,0 +1,39 @@
+<ion-header class="logo_format_dashboard">
+  <img src="assets/images/mitre10logo.png" id="imgLOGO"/>
+</ion-header>
+
+<ion-router-outlet></ion-router-outlet>
+
+<ion-content>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Hello, {{sessionUserName}}</ion-title>
+    </ion-toolbar>
+    <ion-toolbar>
+      <ion-searchbar [(ngModel)]="searchTxt" (search)="getSearchData()" placeholder="Search for products"></ion-searchbar>
+      <!-- <ion-searchbar [(ngModel)]="searchTxt" (ionInput)="getSearchData()" placeholder="Search for products"></ion-searchbar> -->
+      <!-- <ion-searchbar (ionInput)="getSearchData()" placeholder="Search for products"></ion-searchbar> -->      
+    </ion-toolbar>
+  </ion-header>
+    
+  <ion-tabs>
+    <!-- <ion-tab-bar [translucent]="true" slot="bottom"> -->
+      <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="listpage">
+        <ion-icon name="list"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="bottommenu">
+        <ion-icon name="home"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="productlist">
+        <ion-icon name="cart"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="qrcodepage">
+        <ion-icon name="person"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="qrcodepage">
+        <ion-icon name="qr-code"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>

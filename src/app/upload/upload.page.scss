@@ -1,0 +1,44 @@
+.logo_format_upload {
+    background-color: #000000;
+    img {
+        align-items: center;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.card_center_upload {
+    transform: translateX(0%) translateY(0%);
+       top: 10%;
+       left: 0%;
+       position: relative;
+}
+
+ion-content {
+    --ion-background-color: #000000;
+    --keyboard-offset: 0px !important;
+}
+
+ion-card {
+    --ion-background-color: #ffffff;
+}
+
+ion-button {
+    --background: #FF6D00;
+}
+
+.img_align {
+    padding-left: 25%;
+}
+
+.center {
+    justify-content: center; 
+    padding-top: 30%;
+} 
+
+ion-avatar {
+    width:100% !important;
+    height : 100% !important;
+    max-width: 100px !important;  //any size
+    max-height: 100px !important; //any size
+    }
